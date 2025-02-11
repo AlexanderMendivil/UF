@@ -1,6 +1,7 @@
 name: usuful_functions
-description: A starting point for Dart libraries or applications.
+description: A collections of usuful functions to make .
 version: 0.1.0
+homepage: https://github.com/AlexanderMendivil/UF
 # repository: https://github.com/my_org/my_repo
 
 environment:
