@@ -28,7 +28,7 @@ need to flat. It will look something like this:
 
 
     // We specify the type otherwise it will return as a List<dynamic>
-    final flattedList = UF.flatList<List<String>>(nestedList);
+    final flattedList = UF.flatList<String>(nestedList);
 
     print(flattedList);
     
@@ -41,4 +41,4 @@ The output of that print should look like:
 ```
 
 ## Additional Information
-    This library is still in development and under testing, more functions and further testing will happen in the future. 
+This library is still in development and under testing, more functions and further testing willhappen in the future. 

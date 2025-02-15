@@ -8,8 +8,12 @@ void main() {
       // Additional setup goes here.
     });
 
-    //test('First Test', () {
-    //  expect(awesome.isAwesome, isTrue);
-    //});
+  test('Flat array test with String nested lists', () {
+      final List<List<List<String>>> nestedList = [[["Apple", "Banana", "Watermelon"]]];
+    // We specify the type otherwise it will return as a List<dynamic>
+    final flattedList = UF.flatList<String>(nestedList);
+
+    expect(flattedList, ["Apple", "Banana", "Watermelon"]);
+  });
   });
 }
