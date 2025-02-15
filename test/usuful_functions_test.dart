@@ -14,6 +14,7 @@ void main() {
     final flattedList = UF.flatList<String>(nestedList);
 
     expect(flattedList, ["Apple", "Banana", "Watermelon"]);
+    expect(flattedList.runtimeType, List<String>);
   });
   });
 }
