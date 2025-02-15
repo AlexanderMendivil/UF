@@ -10,11 +10,35 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages). 
 -->
+# Usuful Functions (UF)
+### A collection of usuful function for generic tedious tasks like flatting or cloning data.
 
-A collection of usuful function for generic tasks
 
-## Features
-    flat function
+## Features    
+    1. flat List
+    
+
 ## Usage
 
-## Additional information
+To use the "flatList" you need to specify the type you are returning and pass as a parameter the list you
+need to flat. It will look something like this:
+
+```
+    final List<List<List<String>>> nestedList = [[["Apple", "Banana", "Watermelon"]]];
+
+
+    // We specify the type otherwise it will return as a List<dynamic>
+    final flattedList = UF.flatList<List<String>>(nestedList);
+
+    print(flattedList);
+    
+```
+
+The output of that print should look like: 
+
+``` 
+    ["Apple", "Banana", "Watermelon"]
+```
+
+## Additional Information
+    This library is still in development and under testing, more functions and further testing will happen in the future. 
